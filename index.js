@@ -19,8 +19,8 @@ app.use("/api", navRoutes)
 app.use("/api", buttonRoutes)
 app.use("/api", emailRoutes)
 
-app.get("/", (req,res)=>{
-  res.json({"success"})
+app.get("/", (req, res) => {
+  res.send("Success")
 })
 
 const PORT = process.env.PORT || 5000
