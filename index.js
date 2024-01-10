@@ -19,6 +19,10 @@ app.use("/api", navRoutes)
 app.use("/api", buttonRoutes)
 app.use("/api", emailRoutes)
 
+app.get("/", (req,res)=>{
+  res.json({"success"})
+})
+
 const PORT = process.env.PORT || 5000
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`)
